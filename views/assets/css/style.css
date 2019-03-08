@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #29cbe8; 
+    font-family: 'Open Sans', sans-serif;
+}
+.title
+{
+    font-size: 4em;
+    text-align: center;
+}
+.presentation
+{
+    text-align: center;
+    font-size: 2em;
+}
+#hospitalImg{
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+}
+th,td{
+    padding: 10px;
+    border: solid 1px;
+}
+@media only screen and (max-width:700px){
+    table,tbody,tr,th,td{
+        display: block;
+    }
+    td{
+        padding-left: 150px;
+        position: relative;
+    }
+    td::before {
+        content: attr(data-label);
+        padding: 1Opx;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 130px;
+        bottom: 0;
+        align-items: center;
+        border-right: solid 1px;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+    thead {
+        display: none !important;
+    }
+
+}
+.titleRdv{
+    margin-top: 2%;
+}
+.search{
+    margin-top: 2%;
+}
+.titleSearch{
+    font-size: 2em;
+}
